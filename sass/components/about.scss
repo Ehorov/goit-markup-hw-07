@@ -1,0 +1,38 @@
+.about {
+    padding-top: 94px;
+    &-list {
+        display: flex;
+        justify-content: center;
+        width: 1170px;
+    }
+    &-list &-item + &-item {
+        margin-left: 30px;
+    }
+    &-item {
+        &__text {
+            color: $text-color;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        &__head {
+            margin-top: 0px;
+        }
+    }
+    
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-color;
+        border-radius: 4px;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        &__logo {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
