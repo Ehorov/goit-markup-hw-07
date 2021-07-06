@@ -533,7 +533,8 @@ h4 {
   cursor: pointer;
 }
 
-.clients-list:hover, .clients-list:focus {
+.clients-list :hover,
+.clients-list :focus {
   border-color: #2196F3;
   fill: #2196F3;
 }
