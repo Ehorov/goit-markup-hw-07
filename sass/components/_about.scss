@@ -1,27 +1,37 @@
 .about {
     padding-top: 94px;
-    &-list {
+    &__list {
         display: flex;
         justify-content: center;
         width: 1170px;
     }
-    &-list &-item + &-item {
-        margin-left: 30px;
+    &__item {
+        margin-right: 30px;
     }
-    &-item {
-        &__text {
-            color: $text-color;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 24px;
-        }
-        &__head {
-            margin-top: 0px;
-        }
+    &__item:last-child {
+        margin-right: 0px;
     }
+    &__text {
+        color: $text-color;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        }
+    &__title {
+        margin-top: 0px;
+        color: $heading-text-color;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        inherits: none;
+        }
+
     
-    &-icon {
+    &__thumb {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,10 +39,9 @@
         border-radius: 4px;
         width: 270px;
         height: 120px;
-        margin-bottom: 30px;
-        &__logo {
-            width: 70px;
-            height: 70px;
+        margin-bottom: 30px;}
+    &__icon {
+        width: 70px;
+        height: 70px;
         }
-    }
 }
